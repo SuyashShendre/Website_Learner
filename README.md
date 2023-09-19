@@ -5,7 +5,16 @@ Introduction
 Welcome to the API documentation for the Blogging App. This API allows you to create, read, update, and delete blog posts. It allows to ccomment on post and can also update and delete by owner. It also provides user authentication and registration.
 
 Base URL
-The base URL for all API endpoints is: https://example.com/api
+The base URL for all API endpoints is: https://website-learner-pink.vercel.app/api
+
+To run local
+1. clone a git repository in your local
+2. make .env file in root folder of the project in local and make following variables give values to that:
+  i. MONGODB_URL -> give your mongo db url to this variable
+  ii. PORT -> give port no to run project on that port
+  iii. JWT_SECRET -> provide any string as a secret key to this variable for authentication 
+3. open a terminal in root folder and run command: npm install
+4. now project is ready to run, so to run project in local run command: npm start
 
 Authentication
 Most of the endpoints require authentication using JSON Web Tokens (JWT). To authenticate, include the JWT token in the Authorization header of your requests.
