@@ -25,7 +25,9 @@ makefile
 Copy code
 Authorization: Bearer YOUR_JWT_TOKEN
 Endpoints
+
 1. Authentication
+   
 1.1 Register
 Endpoint: /api/auth/signup
 Method: POST
@@ -65,7 +67,8 @@ Response:
 200 OK: Login successful. Returns JWT token.
 401 Unauthorized: Invalid credentials.
 
-2. Blog Posts
+2. Blog Posts\
+   
 2.1 Create a Blog Post
 Endpoint: /api/posts
 Method: POST
@@ -133,6 +136,7 @@ Response:
 404 Not Found: Blog post not found.
 
 3. User Profile
+   
 3.1 Get User Profile
 Endpoint: /api/users/:id
 Method: GET
@@ -143,6 +147,7 @@ Response:
 401 Unauthorized: Authentication required.
 
 4. Post Comments
+   
 4.1 Create a Post Comment
 Endpoint: /api/comments
 Method: POST
@@ -197,7 +202,7 @@ Response:
 401 Unauthorized: Authentication required.
 404 Not Found: Comment not found.
 
-2.5 Delete Comment by ID
+4.5 Delete Comment by ID
 
 Endpoint: /api/comments/:id
 Method: DELETE
